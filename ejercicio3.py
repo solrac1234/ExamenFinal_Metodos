@@ -19,6 +19,6 @@ promU= np.sum(u)/range(u)
 promV= np.sum(v)/range(v)
 
 for i in range(8):
-    cov = (u[i]-promU)(v[i]-promV)/(range(u)-1)
+    cov = np.sum((u[i]-promU)(v[i]-promV)/(range(u)-1))
     print(cov)
 
