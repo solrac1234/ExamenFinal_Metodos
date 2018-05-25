@@ -4,7 +4,12 @@
 import numpy as np
 
 x = np.int_(np.random.random(100)*1000)
-print(x)
+
+while(x<800):
+    if(x%2 != 0):
+        print(x)
+    
+
 
 
 
